@@ -134,3 +134,16 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# --- Cypress-specific ---
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# --- OS junk files ---
+.DS_Store
+Thumbs.db
+
+# --- Editor folders (optional - omit if you want to share editor settings) ---
+.vscode/
+.idea/
