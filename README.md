@@ -81,21 +81,3 @@ Confirmed against the live DOM (not guessed):
 | Password | `input[name="password"]` |
 | Confirm password | `input[name="confirmPassword"]` |
 | Submit button | `button[type="submit"]` |
-
-## Notes for future scenarios
-
-- Cypress's `.type("")` throws on an empty string — to leave a field blank in a
-  test, skip the `.type()` call entirely rather than passing `""`.
-- Step definitions aren't scoped to one feature file; Cucumber matches steps
-  against one shared pool, so steps can be reused across `.feature` files.
-- Only one `Feature:` block is allowed per `.feature` file.
-- Step-definition files must **not** be named `*.cy.ts` — Cypress treats that
-  suffix as a runnable spec and will fail with "No tests found."
-
-## Possible next steps
-
-- [ ] `cy.intercept()` to assert on the actual registration network response
-- [ ] Consolidate the negative-path scenarios into a `Scenario Outline` +
-      `Examples` table
-- [ ] Exact boundary tests (exactly 3 / exactly 39 characters — both should pass)
-- [ ] A second `.feature` file for the login flow
