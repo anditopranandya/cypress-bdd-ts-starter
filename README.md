@@ -70,14 +70,3 @@ All sourced from the site's own published test cases:
 
 **Known behavior:** when multiple fields are invalid at once, the site only shows
 the error for the *first* invalid field it checks — not a combined list.
-
-## Selectors
-
-Confirmed against the live DOM (not guessed):
-
-| Field | Selector |
-|---|---|
-| Username | `input[name="username"]` |
-| Password | `input[name="password"]` |
-| Confirm password | `input[name="confirmPassword"]` |
-| Submit button | `button[type="submit"]` |
